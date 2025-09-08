@@ -18,3 +18,10 @@ export const defaultTheme = {
     'red-500': '#AB222E',
     'red-700': '#7A1921',
 } as const
+
+
+
+/*opções futuras de cores
+
+#5429cc
+*/
