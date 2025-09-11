@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import * as Dialog from "@radix-ui/react-dialog";
+// import { css } from "styled-components";
 
 export const Overlay = styled(Dialog.Overlay)`
     position: fixed;
@@ -66,5 +67,32 @@ export const CloseButton = styled(Dialog.Close)`
 
     &:hover{
         color: ${props => props.theme.white};
+    }
+`;
+
+export const TransactionType = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+`;
+
+interface TransactionTypeButtonProps {
+    variant: "income" | "outcome";
+}
+export const TransactionTypeButton = styled.button<TransactionTypeButtonProps>`
+    background: ${props => props.theme["gray-700"]};
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: ${props => props.theme["gray-300"]};
+
+    svg{
+        color: ${props => props.variant === "income" ? props.theme["green-300"] : props.theme["red-300"]};
     }
 `;
