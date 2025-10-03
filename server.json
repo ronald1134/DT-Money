@@ -1,28 +1,36 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "description": "Desenvolvimento de website",
-            "type": "income",
-            "category": "venda",
-            "price": 1500.00,
-            "createdAt": "2025-09-20T10:00:00Z"
-        },
-        {
-            "id": 2,
-            "description": "Hambúrguer",
-            "type": "outcome",
-            "category": "alimentação",
-            "price": 50.00,
-            "createdAt": "2025-09-21T12:30:00Z"
-        },
-        {
-            "id": 3,
-            "description": "Salário",
-            "type": "income",
-            "category": "Salário",
-            "price": 4000.00,
-            "createdAt": "2025-09-16T06:15:00Z"
-        }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de website",
+      "type": "income",
+      "category": "venda",
+      "price": 1500,
+      "createdAt": "2025-09-20T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "description": "Hambúrguer",
+      "type": "outcome",
+      "category": "alimentação",
+      "price": 50,
+      "createdAt": "2025-09-21T12:30:00Z"
+    },
+    {
+      "id": 3,
+      "description": "Salário",
+      "type": "income",
+      "category": "Salário",
+      "price": 4000,
+      "createdAt": "2025-09-16T06:15:00Z"
+    },
+    {
+      "description": "jogos online",
+      "price": 150,
+      "category": "compra",
+      "type": "outcome",
+      "createdAt": "2025-10-03T00:25:23.207Z",
+      "id": 4
+    }
+  ]
 }
