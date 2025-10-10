@@ -38,7 +38,6 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
             params: {
                 _sort: 'createdAt',
                 _order: 'desc',
-                _like: query,
                 q: query,
             }
         })
