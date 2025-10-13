@@ -12,7 +12,7 @@ export function useSummary() {
 
     console.log(transactions);
 
-    const summary = useMemo(() => { // memoiza o calculo, so recalcula quando transactions mudar
+    const summary = useMemo(() => { // memoriza o calculo, so recalcula quando transactions mudar
         return transactions.reduce(
             (acc, transaction) => {
                 if (transaction.type === 'income') {
