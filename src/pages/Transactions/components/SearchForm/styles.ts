@@ -15,7 +15,21 @@ export const SearchFormContainer = styled.form`
         &::placeholder {
             color: ${props => props.theme['gray-500']};
         }
+
+
+                &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 1000px ${(props) => props.theme["gray-900"]} inset !important;
+            caret-color: ${(props) => props.theme["gray-300"]};
+            transition: background-color 5000s ease-in-out 0s;
+        }
+        
+
     }
+
+
 
     button {
         display: flex;
@@ -26,7 +40,7 @@ export const SearchFormContainer = styled.form`
             padding: 1rem;
             background-color: transparent;
             border: 1px solid ${props => props.theme['green-300']};
-            color: ${props => props.theme['green-300']};
+            color: ${props => props.theme['white']};
             font-weight: bold;
             border-radius: 6px;
             cursor: pointer;
